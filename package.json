@@ -10,7 +10,7 @@
     "test:prod": "NODE_ENV=test mocha test/**/*-test.js --compilers js:babel-core/register",
     "test:watch": "NODE_ENV=test npm test -- --watch",
     "html:prod": "htmlmin src/index.html -o dist/index.html",
-    "deploy": "npm run compile:prod && npm run html:prod && surge -p dist",
+    "deploy": "npm run compile:prod && npm run html:prod && surge -p dist -d hello-world-ddbr6604smfc.surge.sh",
     "clean": "rm -rf dist/ src/build",
     "start": "npm run compile:watch"
   },
